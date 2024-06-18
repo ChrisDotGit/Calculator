@@ -1,19 +1,53 @@
+var total = 0;
+var strNum = '';
 
-var startValue_string = '';
-var operator = '';
-
-// INPUT NUMERICAL VALUE
+// Input Numbers
 function inputNumber(number){
-    startValue_string = startValue_string + number;
-    document.getElementById("output").innerHTML = startValue_string;
+    strNum = strNum + number;
+    document.getElementById("output").innerHTML = strNum;
+    console.log('inputNumber', strNum);
 }
 
-function selectOperator(selectedOperator) {
-    operator = selectedOperator;
-    console.log(operator)
+// Equals button
+function equals(){
+    if (strNum !== ''){
+        document.getElementById("total").innerHTML = total;
+        strNum = '';
+
+        console.log('equals', total);
+        }
 }
 
-function calculate(){
-    valueArray = startValue_string.split(/(÷|\+|\.)/);
-    console.log(valueArray)
+// Reset calculator
+function clearOutput(){
+    total = 0;
+    strNum = '';
+    document.getElementById("output").innerHTML = total;
+    document.getElementById("total").innerHTML = total;
+    console.log('---------CLEAR---------')
+    }
+
+
+
+//////////////////////////OPERATIONS///////////////////////////
+
+function add(){
+    if (strNum !== ''){
+    total = total + parseInt(strNum);
+    document.getElementById("total").innerHTML = total;
+    // strNum = '';
+
+    console.log('addTotal', total);
+    }
 }
+
+function subtract(){
+    if (strNum !== ''){
+    total = total - parseInt(strNum);
+    document.getElementById("total").innerHTML = total;
+    strNum = '';
+
+    console.log('subtractTotal', total);
+    }
+}
+

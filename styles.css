@@ -23,17 +23,31 @@ main {
 .grid-container {
     display: grid;
     grid-template-areas: 
+                "total total total total"
                 "output output output output"
                 "item7 item8 item9 division"
                 "item4 item5 item6 multiplication"
                 "item1 item2 item3 subtraction"
-                "item0 decimals equals addition";
+                "item0 clear equals addition";
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 10px; /* Optional: Adds space between grid items */
     padding: 10px; /* Optional: Adds padding around the grid container */
 }
 
+
+.grid-total {
+    background-color: #04020c;
+    color: #a19a9a;
+    border: 1px solid #333;
+    display: flex;
+    justify-content: right;
+    padding-right: 15px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: 'Calculator', sans-serif;
+}
 
 
 .grid-output {
@@ -49,6 +63,7 @@ main {
     font-family: 'Calculator', sans-serif;
 }
 
+.total { grid-area: total;}
 .item0 { grid-area: item0; }
 .item1 { grid-area: item1; }
 .item2 { grid-area: item2; }
@@ -59,7 +74,7 @@ main {
 .item7 { grid-area: item7; }
 .item8 { grid-area: item8; }
 .item9 { grid-area: item9; }
-.decimals { grid-area: decimals; }
+.clear { grid-area: clear; }
 .output { grid-area: output; }
 .division { grid-area: division; }
 .multiplication { grid-area: multiplication; }
@@ -86,3 +101,6 @@ main {
     background-color: #a36d1c;
 }
 
+/* .equals {
+    display: none;
+} */

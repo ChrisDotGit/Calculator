@@ -19,13 +19,14 @@
         <div class="item8"><input type="submit" class="btn" value="8" onclick="inputNumber(8)"></div>
         <div class="item9"><input type="submit" class="btn" value="9" onclick="inputNumber(9)"></div>
 
+        <div id="total" class="grid-total total">0</div>
         <div id="output" class="grid-output output">0</div>
-        <div class="division"><input type="submit" class="btn" value="÷" onclick="inputNumber('÷')"></div>
-        <div class="multiplication"><input type="submit" class="btn" value="x" onclick="inputNumber('x'); selectOperator('multiplication')"></div>
-        <div class="subtraction"><input type="submit" class="btn" value="-" onclick="inputNumber('-')"></div>
-        <div class="addition"><input type="submit" class="btn" value="+" onclick="inputNumber('+')"></div>
-        <div class="decimals"><input type="submit" class="btn" value="." onclick="inputNumber('.')"></div>
-        <div class="equals"><input type="submit" class="btn btn-equals" value="=" onclick="calculate()"></div>
+        <div class="division"><input type="submit" class="btn" value="÷" onclick=""></div>
+        <div class="multiplication"><input type="submit" class="btn" value="x" onclick=""></div>
+        <div class="subtraction"><input type="submit" class="btn" value="-" onclick="subtract()"></div>
+        <div class="addition"><input type="submit" class="btn" value="+" onclick="add()"></div>
+        <div class="clear"><input type="submit" class="btn" value="C" onclick="clearOutput()"></div>
+        <div class="equals"><input type="submit" class="btn btn-equals" value="=" onclick="equals()"></div>
 
     </main>
     <script src="script.js"></script>
