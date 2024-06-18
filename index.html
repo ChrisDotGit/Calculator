@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <main class="grid-container">
+        <div class="item0"><input type="submit" class="btn" value="0" onclick="inputNumber(0)"></div>
+        <div class="item1"><input type="submit" class="btn" value="1" onclick="inputNumber(1)"></div>
+        <div class="item2"><input type="submit" class="btn" value="2" onclick="inputNumber(2)"></div>
+        <div class="item3"><input type="submit" class="btn" value="3" onclick="inputNumber(3)"></div>
+        <div class="item4"><input type="submit" class="btn" value="4" onclick="inputNumber(4)"></div>
+        <div class="item5"><input type="submit" class="btn" value="5" onclick="inputNumber(5)"></div>
+        <div class="item6"><input type="submit" class="btn" value="6" onclick="inputNumber(6)"></div>
+        <div class="item7"><input type="submit" class="btn" value="7" onclick="inputNumber(7)"></div>
+        <div class="item8"><input type="submit" class="btn" value="8" onclick="inputNumber(8)"></div>
+        <div class="item9"><input type="submit" class="btn" value="9" onclick="inputNumber(9)"></div>
+
+        <div id="output" class="grid-output output">0</div>
+        <div class="division"><input type="submit" class="btn" value="÷" onclick="inputNumber('÷')"></div>
+        <div class="multiplication"><input type="submit" class="btn" value="x" onclick="inputNumber('x'); selectOperator('multiplication')"></div>
+        <div class="subtraction"><input type="submit" class="btn" value="-" onclick="inputNumber('-')"></div>
+        <div class="addition"><input type="submit" class="btn" value="+" onclick="inputNumber('+')"></div>
+        <div class="decimals"><input type="submit" class="btn" value="." onclick="inputNumber('.')"></div>
+        <div class="equals"><input type="submit" class="btn btn-equals" value="=" onclick="calculate()"></div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
