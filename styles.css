@@ -28,7 +28,7 @@ main {
                 "item7 item8 item9 division"
                 "item4 item5 item6 multiplication"
                 "item1 item2 item3 subtraction"
-                "item0 clear equals addition";
+                "item0 clear empty addition";
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 10px; /* Optional: Adds space between grid items */
@@ -61,6 +61,9 @@ main {
     font-weight: bold;
     font-size: 5rem;
     font-family: 'Calculator', sans-serif;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 80px;
 }
 
 .total { grid-area: total;}
@@ -80,7 +83,6 @@ main {
 .multiplication { grid-area: multiplication; }
 .subtraction { grid-area: subtraction; }
 .addition { grid-area: addition; }
-.equals { grid-area: equals; }
 
 .btn {
     height: 100%;
@@ -91,16 +93,4 @@ main {
 
 .btn:hover {
     background-color: rgb(179, 179, 179);
-}
-
-.btn-equals {
-    background-color: #F7A42A;
-}
-
-.btn-equals:hover {
-    background-color: #a36d1c;
-}
-
-.equals {
-    display: none;
 }

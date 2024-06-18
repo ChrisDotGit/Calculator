@@ -2,24 +2,11 @@ var total = 0;
 var strNum = '';
 
 
-
-
-
 // Input Numbers
 function inputNumber(number){
     strNum = strNum + number;
     document.getElementById("output").innerHTML = strNum;
     console.log('inputNumber', strNum);
-}
-
-// Equals button
-function equals(){
-    if (strNum !== ''){
-        strNum = '';
-        document.getElementById("total").innerHTML = total;
-        document.getElementById("output").innerHTML = 0;
-        console.log('equals', total);
-        }
 }
 
 // Reset calculator
@@ -30,16 +17,6 @@ function clearOutput(){
     document.getElementById("total").innerHTML = total;
     console.log('---------CLEAR---------')
 }
-
-
-function deleteNum(){
-    if (strNum !== ''){
-    strNum = str.slice(0, -1);
-    document.getElementById("output").innerHTML = total;
-    }
-
-}
-
 
 
 //////////////////////////OPERATIONS///////////////////////////
@@ -67,7 +44,6 @@ function subtract(){
     console.log('subtractTotal', total);
     }
 }
-
 
 
 function multiply(){
